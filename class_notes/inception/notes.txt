@@ -1,0 +1,19 @@
+react -> core react things
+react-dom -> we need this to modify dom
+
+
+
+common code notes
+
+    const heading = React.createElement("h1", {*}, "Hello world, from ReactJs!");
+        this will create an element
+        this will give us Object not h1 tag
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+        this will create a room which is must to render anything
+
+    root.render(heading);
+        this will append heading into root element
+        this will take heading object, convert it into h1 tag and put it on DOM
+
+    *this empty object we use to give attribute
