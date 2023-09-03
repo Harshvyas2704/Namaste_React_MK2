@@ -1,0 +1,23 @@
+NPM -> is the standard repository for all the packages.
+package.json is configuration for packages or dependancies.
+Bundlers -> this will bundle our app and packages together so we can ship our app to production.
+
+npm install -D parcel
+    What is -D?
+        1) Dev dependancies
+            - this generally required this development phase.
+        2) Normal dependancies
+            - may use in productions.
+
+if we use ^ in version then parcel will automatically upgrade to newer version. for minor version. (safe)
+if we use ~ in version then parcel will automatically upgrade to newer version. for major version.
+
+package.json might upgrade the version (minor) but package-lock.json will lock the version and keeps record of the version so it will not have ^ or ~. it have exact version. Always put these 2 files in git repo. this have records of all the required dependancies. so we can regenerate node modules from this files.
+
+if we delete node modules then we can regenerate all of that with this command (npm install)
+
+note: whatever you can regenerate do not put it on git repository
+
+Transetive Dependancies: - we have install parcel then parcel have its own dependancies that dependancies have its own dependancies so this things called Transetive Dependancies.
+
+make our src file type as module

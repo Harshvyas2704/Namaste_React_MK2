@@ -1,0 +1,10 @@
+npm init
+npm install -D parcel
+npx parcel index.html  -> to igninte app
+npm install react
+npm install react-dom  -> we can write npm i react-dom is the same thing
+npx parcel build index.html  -> remove main app.js from package.json
+
+
+
+.gitignore -> put node modules in this file
